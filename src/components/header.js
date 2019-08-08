@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header
       style={{
-        background: 'rgba(249, 219, 91, 1)',
+        background: '#fae06e',
         marginBottom: `1.45rem`,
       }}
     >

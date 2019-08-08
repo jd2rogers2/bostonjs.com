@@ -8,5 +8,14 @@
 }
 .navLink {
     background: black;
-    color: rgba(249, 219, 91, 1);
+    color: #fae06e;
+    margin: 0 2%;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.navLink:hover {
+    background: #fae06e;
+    color: black;
 }

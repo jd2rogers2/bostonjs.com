@@ -18,7 +18,7 @@ const Nav = () => {
             <Link className="navLink" to="/">Past Events</Link>
             <Link className="navLink" to="/CodeOfConduct/">Code of Conduct</Link>
             <a className="navLink" href={slackLink} target="_blank">Slack Community</a>
-            <Link className="navLink" to="/">Meetup.com</Link>
+            <Link className="navLink" to="/MeetUp/">Meetup.com</Link>
         </div>
     </div>
   );
