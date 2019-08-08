@@ -9,7 +9,7 @@ const Nav = () => {
       <div id="navWrapper">
         <div id="navComponent">
             <Link className="navLink" to="/">Past Events</Link>
-            <Link className="navLink" to="/">Code of Conduct</Link>
+            <Link className="navLink" to="/CodeOfConduct/">Code of Conduct</Link>
             <Link className="navLink" to="/">Slack Community</Link>
             <Link className="navLink" to="/">Meetup.com</Link>
         </div>
