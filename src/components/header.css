@@ -1,0 +1,15 @@
+@-webkit-keyframes sailin {
+    0%   { background-position: left 0 bottom 20% }
+    100% { background-position: left 9999px bottom 20% }
+}
+
+@keyframes sailin {
+    0%   { background-position: left 0 bottom 20% }
+    100% { background-position: left 9999px bottom 20% }
+}
+
+#river {
+    padding: 10px 0;
+    background: url(../images/river.png) left -20% bottom 5% repeat-x;
+    animation: sailin 2000s linear infinite;
+}

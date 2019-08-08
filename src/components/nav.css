@@ -1,0 +1,12 @@
+#navWrapper {
+    text-align: center;
+}
+
+#navComponent {
+    padding: 70px 0 0 0;
+    margin: auto;
+}
+.navLink {
+    background: black;
+    color: rgba(249, 219, 91, 1);
+}
