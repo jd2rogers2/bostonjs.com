@@ -1,21 +1,55 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Boston JS" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+// import { eventsInitialVal, useEvents } from '../hooks';
+// const { events, handleEventsChange } = useEvents(eventsInitialVal);
+
+// const MEETUP_BASE_URL = "https://api.meetup.com/boston_JS/events";
+
+class IndexPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      events: [],
+    }
+  }
+
+  componentDidMount() {
+    fetch("https://api.meetup.com/boston_JS/events", {
+      dataType: 'jsonp',
+      method: "GET",
+      headers: {
+        "Access-Control-Allow-Origin" : "*",
+        "Content-type": "application/json"
+      }
+    }).then(resp => {
+      return resp.json();
+    }).then(events => {
+      this.setState({ events });
+    }).catch(resp => {
+      debugger;
+    })
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Boston JS" />
+        <h1>Upcoming Meetups!</h1>
+        {this.state.events.length ? (
+          <p>yay</p>
+        ) : (
+          <p>no events to show</p>
+        )}
+
+      </Layout>
+    );
+  }
+}
+
 
 export default IndexPage
