@@ -18,23 +18,6 @@ class IndexPage extends React.Component {
     }
   }
 
-  componentDidMount() {
-    fetch("https://api.meetup.com/boston_JS/events", {
-      dataType: 'jsonp',
-      method: "GET",
-      headers: {
-        "Access-Control-Allow-Origin" : "*",
-        "Content-type": "application/json"
-      }
-    }).then(resp => {
-      return resp.json();
-    }).then(events => {
-      this.setState({ events });
-    }).catch(resp => {
-      debugger;
-    })
-  }
-
   render() {
     return (
       <Layout>

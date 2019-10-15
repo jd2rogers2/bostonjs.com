@@ -10,6 +10,8 @@ import "./nav.css"
 // slack link from old page that other said didn't work (works ok for james)
 // https://bostonjavascript.slack.com/join/shared_invite/enQtMjQyNzkwNDM4OTYyLTU3MTExMzI0YTYwZWU3M2UyMWJjNGMxZGEwOTVlYWNhODM1NWE4MGY3MDkxMGE1YzIwMDc1NTFmMzJlMTEzNDI
 
+//            <Link className="navLink" to="/MeetUp/">Meetup.com</Link>
+
 const Nav = () => {
   const slackLink = "https://bostonjavascript.slack.com/join/shared_invite/enQtMjQyNzkwNDM4OTYyLTU3MTExMzI0YTYwZWU3M2UyMWJjNGMxZGEwOTVlYWNhODM1NWE4MGY3MDkxMGE1YzIwMDc1NTFmMzJlMTEzNDI";
   return (
@@ -17,8 +19,8 @@ const Nav = () => {
         <div id="navComponent">
             <Link className="navLink" to="/">Past Events</Link>
             <Link className="navLink" to="/CodeOfConduct/">Code of Conduct</Link>
-            <a className="navLink" href={slackLink} target="_blank">Slack Community</a>
-            <Link className="navLink" to="/MeetUp/">Meetup.com</Link>
+            <a className="navLink" href={slackLink} target="_blank" rel="noopener noreferrer">Slack Community</a>
+            <a className="navLink" href='https://www.meetup.com/boston_JS' target="_blank" rel="noopener noreferrer">Meetup.com</a>
         </div>
     </div>
   );

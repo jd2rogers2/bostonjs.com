@@ -1,2 +1,4 @@
 resources:
 https://github.com/phacks/gatsby-source-meetup/blob/master/src/gatsby-node.js
+
+`gatsby develop`
