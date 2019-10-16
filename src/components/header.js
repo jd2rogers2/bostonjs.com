@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => {
     query {
       city: file(relativePath: { eq: "city.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 835) {
             ...GatsbyImageSharpFluid
           }
         }

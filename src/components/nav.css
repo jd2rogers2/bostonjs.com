@@ -7,15 +7,25 @@
     margin: auto;
 }
 .navLink {
-    background: black;
+    background: #3b3b3b;
     color: #fae06e;
-    margin: 0 2%;
+    margin: 0 1px;
+    font-family: Klinik, serif;
+    font-weight: bold;
     padding: 10px 30px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid #3b3b3b;
 }
 
 .navLink:hover {
     background: #fae06e;
-    color: black;
+    color: #3b3b3b;
 }
+
+/*
+slight fade for waves on original site
+.logo:before {
+    background: -webkit-linear-gradient( 90deg, #fae06e, rgba(255,255,255,0));
+    background: linear-gradient( 90deg, #fae06e, rgba(255,255,255,0));
+}
+*/
